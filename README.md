@@ -86,10 +86,7 @@ gmae_project/
 ├── train_pretrain.sh           # Быстрый запуск предобучения
 ├── train_finetune.sh           # Быстрый запуск дообучения
 ├── README.md                   # Описание проекта
-├── pyproject.toml              # Зависимости (Poetry/PEP-621)
-├── requirements.txt            # (если есть) pip-зависимости
-├── Dockerfile                  # (если используется) контейнеризация
-└── .gitignore                  # Исключаемые файлы
+└── pyproject.toml              # Зависимости (Poetry/PEP-621)
 ```
 
 ## 4. Установка и запуск

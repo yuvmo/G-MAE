@@ -1,0 +1,33 @@
+seed: 42
+device: "cuda"
+log_to_wandb: true
+project_name: "GMAE-Pretrain"
+run_name: "gmae-base-pretrain"
+save_dir: "/home/student/projects/gmae/checkpoints/pretrain"
+
+data_path: "/home/student/projects/gmae/data/pretrain_dataset"
+pretrained_checkpoint: null
+in_channels: 3
+img_size: 224
+batch_size: 64
+num_workers: 8
+
+patch_size: 16
+embed_dim: 768
+depth: 12
+num_heads: 12
+decoder_embed_dim: 512
+decoder_depth: 8
+decoder_num_heads: 16
+mlp_ratio: 4.0
+mask_ratio: 0.75
+dilation_rates: [1, 3, 5]
+ffn_kernel_sizes: [3, 5, 7]
+overlap_patches: false
+
+epochs: 200
+lr: 0.0001
+weight_decay: 0.05
+warmup_epochs: 10
+save_freq: 50
+fp16: true
